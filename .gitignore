@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -33,4 +33,3 @@ npm-debug.log*
 backend/loans_full_schema.csv
 backend/real_loans_cleaned.csv
 backend/*.csv
-backend/models/train_sample.pkl

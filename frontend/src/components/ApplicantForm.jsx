@@ -17,7 +17,7 @@ const Label = ({ children }) => (
   <label className="block text-xs font-medium text-slate-400 mb-1">{children}</label>
 )
 
-const NumberInput = ({ label, name, value, onChange, min, max, step = 1, prefix, suffix }) => (
+const NumberInput = ({ label, name, value, onChange, min, max, step = 'any', prefix, suffix }) => (
   <div>
     <Label>{label}</Label>
     <div className="relative">
@@ -143,7 +143,7 @@ export default function ApplicantForm({ initialValues, onSubmit, loading }) {
           name="employment_length"
           value={form.employment_length}
           onChange={handleChange}
-          min={0} max={50} step={0.5}
+          min={0} max={50} step="any"
         />
         <SelectInput
           label="Education"
@@ -211,7 +211,7 @@ export default function ApplicantForm({ initialValues, onSubmit, loading }) {
           name="loan_amount"
           value={form.loan_amount}
           onChange={handleChange}
-          min={500} max={100000} step={500}
+          min={500} max={100000} step="any"
           prefix="$"
         />
         <SelectInput
@@ -228,7 +228,7 @@ export default function ApplicantForm({ initialValues, onSubmit, loading }) {
           name="interest_rate"
           value={form.interest_rate}
           onChange={handleChange}
-          min={1} max={35} step={0.5}
+          min={1} max={35} step="any"
           suffix="%"
         />
         <NumberInput
@@ -236,7 +236,7 @@ export default function ApplicantForm({ initialValues, onSubmit, loading }) {
           name="installment"
           value={form.installment}
           onChange={handleChange}
-          min={1} max={10000} step={10}
+          min={1} max={10000} step="any"
           prefix="$"
         />
       </div>

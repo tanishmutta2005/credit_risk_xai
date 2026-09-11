@@ -236,7 +236,7 @@ def calibrate_model(
     model: Pipeline,
     X_val: pd.DataFrame,
     y_val: np.ndarray,
-    method: str = "isotonic",
+    method: str = "sigmoid",
     output_path: str = "models/calibration_curve.png",
 ) -> CalibratedClassifierCV:
     """
@@ -244,19 +244,16 @@ def calibrate_model(
 
     Args:
         model:       Already-fitted sklearn Pipeline.
-        X_val:       Validation features.
+        X_val:       Validation features (or training set).
         y_val:       Validation labels.
-        method:      "isotonic" or "sigmoid".
+        method:      "sigmoid" (Platt scaling) or "isotonic".
         output_path: Where to save the reliability-curve PNG.
 
     Returns:
         Fitted CalibratedClassifierCV wrapping the original model.
     """
     print(f"[models] Calibrating with method='{method}' ...")
-    # sklearn 1.4+ removed cv='prefit'; use cv=None + set_params on a clone,
-    # or simply re-fit CalibratedClassifierCV with a held-out fold.
-    # Here we use cv=5 on training data (X_val) which is the recommended approach.
-    calibrated = CalibratedClassifierCV(estimator=model, method=method, cv=5)
+    calibrated = CalibratedClassifierCV(estimator=model, method=method, cv=3)
     calibrated.fit(X_val, y_val)
 
     # ── Plot reliability curve ───────────────────────────────────────────────

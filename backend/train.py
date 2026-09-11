@@ -130,8 +130,8 @@ def run_pipeline(csv_path: str | None = None, output_dir: str = "models") -> dic
 
     # ── 9. Calibrate ──────────────────────────────────────────────────────────
     calibrated_model = calibrate_model(
-        best_model, X_val, y_val,
-        method="isotonic",
+        best_model, X_train, y_train,
+        method="sigmoid",
         output_path=f"{output_dir}/calibration_curve.png",
     )
 

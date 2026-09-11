@@ -2,46 +2,58 @@
   "age_group": {
     "groups": {
       "Senior (>35)": {
-        "false_negative_rate": 0.0347,
-        "false_positive_rate": 0.0,
-        "selection_rate": 0.2898,
-        "n": 1822
+        "false_negative_rate": 0.37,
+        "false_positive_rate": 0.1801,
+        "selection_rate": 0.3906,
+        "n": 699
       },
       "Young (<=35)": {
-        "false_negative_rate": 0.12,
-        "false_positive_rate": 0.0,
-        "selection_rate": 0.1236,
-        "n": 178
+        "false_negative_rate": 0.3258,
+        "false_positive_rate": 0.2781,
+        "selection_rate": 0.4518,
+        "n": 301
       }
     },
     "summary": {
-      "demographic_parity_difference": 0.1662,
-      "demographic_parity_ratio": 0.4265,
-      "equalized_odds_difference": 0.0853,
-      "disparate_impact_ratio": 0.4265,
+      "demographic_parity_difference": 0.0613,
+      "demographic_parity_ratio": 0.8644,
+      "equalized_odds_difference": 0.098,
+      "disparate_impact_ratio": 0.8644,
       "sensitive_attribute": "age_group"
     }
   },
   "employment_group": {
     "groups": {
       "Employed": {
-        "false_negative_rate": 0.039,
-        "false_positive_rate": 0.0,
-        "selection_rate": 0.2794,
-        "n": 1854
+        "false_negative_rate": 0.3871,
+        "false_positive_rate": 0.1927,
+        "selection_rate": 0.3825,
+        "n": 549
+      },
+      "Part-Time": {
+        "false_negative_rate": 0.4928,
+        "false_positive_rate": 0.2564,
+        "selection_rate": 0.3741,
+        "n": 147
+      },
+      "Self-Employed": {
+        "false_negative_rate": 0.2323,
+        "false_positive_rate": 0.1909,
+        "selection_rate": 0.4641,
+        "n": 209
       },
       "Unemployed": {
-        "false_negative_rate": 0.0303,
-        "false_positive_rate": 0.0,
-        "selection_rate": 0.2192,
-        "n": 146
+        "false_negative_rate": 0.2558,
+        "false_positive_rate": 0.2885,
+        "selection_rate": 0.4947,
+        "n": 95
       }
     },
     "summary": {
-      "demographic_parity_difference": 0.0602,
-      "demographic_parity_ratio": 0.7845,
-      "equalized_odds_difference": 0.0087,
-      "disparate_impact_ratio": 0.7845,
+      "demographic_parity_difference": 0.1206,
+      "demographic_parity_ratio": 0.7563,
+      "equalized_odds_difference": 0.2604,
+      "disparate_impact_ratio": 0.7563,
       "sensitive_attribute": "employment_group"
     }
   }
