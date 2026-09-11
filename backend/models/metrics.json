@@ -1,0 +1,27 @@
+{
+  "roc_auc": {
+    "LogisticRegression": 0.9925,
+    "RandomForest": 0.9867,
+    "XGBoost": 0.9889
+  },
+  "f1": {
+    "LogisticRegression": 0.9804,
+    "RandomForest": 0.9804,
+    "XGBoost": 0.9804
+  },
+  "precision": {
+    "LogisticRegression": 1.0,
+    "RandomForest": 1.0,
+    "XGBoost": 1.0
+  },
+  "recall": {
+    "LogisticRegression": 0.9615,
+    "RandomForest": 0.9615,
+    "XGBoost": 0.9615
+  },
+  "brier_score": {
+    "LogisticRegression": 0.0127,
+    "RandomForest": 0.0429,
+    "XGBoost": 0.0108
+  }
+}

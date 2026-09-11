@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  @apply bg-slate-950 text-slate-100 font-sans antialiased;
+}
+
+/* Card glass effect */
+.glass-card {
+  @apply bg-slate-900/80 border border-slate-700/60 rounded-2xl shadow-xl backdrop-blur-sm;
+}
+
+/* Risk badge colors */
+.badge-low    { @apply bg-emerald-900/60 text-emerald-300 border border-emerald-700; }
+.badge-medium { @apply bg-amber-900/60   text-amber-300   border border-amber-700;  }
+.badge-high   { @apply bg-red-900/60     text-red-300     border border-red-700;    }
+
+/* Scrollbar styling */
+::-webkit-scrollbar        { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: #0f172a; }
+::-webkit-scrollbar-thumb  { background: #334155; border-radius: 4px; }

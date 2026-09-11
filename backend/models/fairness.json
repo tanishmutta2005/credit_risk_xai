@@ -1,0 +1,48 @@
+{
+  "age_group": {
+    "groups": {
+      "Senior (>35)": {
+        "false_negative_rate": 0.0347,
+        "false_positive_rate": 0.0,
+        "selection_rate": 0.2898,
+        "n": 1822
+      },
+      "Young (<=35)": {
+        "false_negative_rate": 0.12,
+        "false_positive_rate": 0.0,
+        "selection_rate": 0.1236,
+        "n": 178
+      }
+    },
+    "summary": {
+      "demographic_parity_difference": 0.1662,
+      "demographic_parity_ratio": 0.4265,
+      "equalized_odds_difference": 0.0853,
+      "disparate_impact_ratio": 0.4265,
+      "sensitive_attribute": "age_group"
+    }
+  },
+  "employment_group": {
+    "groups": {
+      "Employed": {
+        "false_negative_rate": 0.039,
+        "false_positive_rate": 0.0,
+        "selection_rate": 0.2794,
+        "n": 1854
+      },
+      "Unemployed": {
+        "false_negative_rate": 0.0303,
+        "false_positive_rate": 0.0,
+        "selection_rate": 0.2192,
+        "n": 146
+      }
+    },
+    "summary": {
+      "demographic_parity_difference": 0.0602,
+      "demographic_parity_ratio": 0.7845,
+      "equalized_odds_difference": 0.0087,
+      "disparate_impact_ratio": 0.7845,
+      "sensitive_attribute": "employment_group"
+    }
+  }
+}

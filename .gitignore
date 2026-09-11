@@ -1,0 +1,36 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Environment and sensitive keys
+.env
+.env.*
+*.key
+*.pem
+*token*
+*secret*
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# Large raw datasets (don't upload to GitHub)
+backend/loans_full_schema.csv
+backend/real_loans_cleaned.csv
+backend/*.csv
+backend/models/train_sample.pkl

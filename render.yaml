@@ -1,0 +1,12 @@
+﻿services:
+  - type: web
+    name: credit-risk-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONUTF8
+        value: "1"
+      - key: MODELS_DIR
+        value: models

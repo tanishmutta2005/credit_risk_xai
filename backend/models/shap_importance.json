@@ -1,0 +1,22 @@
+{
+  "num__late_payments": 1.8755522582270043,
+  "num__previous_defaults": 1.4443210028918032,
+  "num__interest_rate": 0.3647629282254877,
+  "num__dependents": 0.18853993855361614,
+  "num__loan_amount": 0.1785907539202202,
+  "num__credit_utilization": 0.1734844265936986,
+  "num__employment_length": 0.15609399066147825,
+  "num__dti": 0.1320227851174371,
+  "num__savings_ratio": 0.09696673065088807,
+  "cat__loan_purpose_credit_card": 0.09295699820252802,
+  "num__loan_term": 0.09008541732103757,
+  "cat__loan_purpose_small_business": 0.0874568584081953,
+  "num__installment": 0.08716203199278418,
+  "num__existing_debt": 0.08699106188388622,
+  "num__monthly_expenses": 0.07540131350212119,
+  "cat__loan_purpose_debt_consolidation": 0.06653184587492737,
+  "num__annual_income": 0.05877979527454207,
+  "num__savings": 0.057195059760864794,
+  "num__credit_history_length": 0.05540583160482343,
+  "num__payment_burden": 0.05012673184611658
+}
